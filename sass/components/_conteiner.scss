@@ -1,0 +1,28 @@
+// .container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }
+.container {
+  //fone screen (<767px)
+  min-width: 320px;
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 479.98px) {
+    max-width: 480px;
+  }
+  //tablet screen (>767px)
+  @media screen and (min-width: 767.98px) {
+    max-width: 768px;
+  }
+  //tablet screen (>1200px)
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+  outline: 2px solid tomato;
+  outline-offset: -2px;
+}

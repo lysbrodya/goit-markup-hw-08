@@ -1,0 +1,14 @@
+.heder {
+    border-bottom: 1px solid var(--boder-bot-color);
+}
+.heder__logo {
+    color: var(--black-color);
+}
+.heder__container {
+    display: flex;
+    justify-content: space-between;
+}
+.header__icons {
+    margin-right: 10px;
+    fill: currentColor;
+}
