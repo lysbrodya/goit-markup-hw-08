@@ -81,9 +81,11 @@
     margin-bottom: 300px;
   }
 }
-address {
-  margin-left: auto;
-}
+// address {
+//   @media screen and (min-width: 1199px) {
+//     margin-left: auto;
+//   }
+// }
 .nav__list a {
   @media screen and (max-width: 767px) {
     display: block;

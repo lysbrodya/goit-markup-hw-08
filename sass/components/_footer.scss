@@ -32,11 +32,18 @@
 .footer__logo {
   color: var(--white-color);
 }
+.footer__first {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer .logo {
   margin-bottom: 30px;
   @media screen and (max-width: 1200px) {
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 }
 .bot-nav {
