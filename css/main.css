@@ -173,19 +173,6 @@ img {
   border-bottom: 1px solid #ececec;
   position: relative;
 }
-@media screen and (max-width: 768px) {
-  .header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-@media screen and (min-width: 767px) {
-  .header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-
 .js-close-menu {
   margin-left: auto;
   padding: 0;
@@ -235,6 +222,14 @@ img {
   display: none;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media screen and (max-width: 768px) {
   .nav {
     display: -webkit-box;
@@ -243,12 +238,9 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .nav_mobile-contacts .logo {
-    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -263,9 +255,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -283,6 +272,10 @@ img {
   }
 }
 
+address {
+  margin-left: auto;
+}
+
 @media screen and (max-width: 767px) {
   .nav__list a {
     display: block;
@@ -293,6 +286,10 @@ img {
   }
 }
 
+.nav_mobile-contacts {
+  z-index: 999;
+  width: 100%;
+}
 @media screen and (max-width: 767px) {
   .nav_mobile-contacts {
     position: absolute;
@@ -494,7 +491,7 @@ img {
 .address__link {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--primary-text-color);
+  color: var(--title-text-color);
 }
 .address__link:hover, .address__link:focus {
   color: var(--accent-text-color);
@@ -536,8 +533,6 @@ body {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 2px solid tomato;
-  outline-offset: -2px;
 }
 @media screen and (min-width: 479.98px) {
   .container {
@@ -567,12 +562,19 @@ body {
   width: 145px;
   margin: 0;
   padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 @media screen and (min-width: 1199px) {
   .logo {
     font-size: 26px;
     line-height: 1.2;
   }
+}
+
+.second-logo {
+  color: rgb(0, 0, 0);
 }
 
 .hero {
@@ -804,7 +806,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 90px) / 4);
   }
 }
 
