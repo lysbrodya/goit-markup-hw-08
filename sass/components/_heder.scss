@@ -108,7 +108,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     padding: 48px 40px;
     display: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -152,20 +151,25 @@
 
   @media screen and (max-width: 767px) {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
   }
+  gap: 10px;
 }
 
-.socials__item {
-  margin-left: 10px;
-}
+// .socials__item {
+//   margin-left: 10px;
+// }
 
 .socials__item:not(:last-child) {
-  padding-right: 11px;
+  padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-
 .socials__item a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
   color: var(--accent-text-color);
 }
 
